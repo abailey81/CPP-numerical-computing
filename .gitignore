@@ -1,14 +1,11 @@
 .DS_Store
 /build/
-/CMakeFiles/
-/CMakeCache.txt
+CMakeFiles/
+CMakeCache.txt
 cmake_install.cmake
 Makefile
 .vscode/
 .idea/
 *.code-workspace
-/plots/
 /report/figures/
-/data/*.out
-__pycache__/
-*.pyc
+data/*.out
