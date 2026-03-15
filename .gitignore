@@ -12,3 +12,9 @@ Makefile
 /data/*.out
 __pycache__/
 *.pyc
+
+# CMake / IDE integration
+cmake-build-*/
+compile_commands.json
+.cache/
+.clangd/
