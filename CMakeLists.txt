@@ -4,6 +4,7 @@ project(numerical_computing_cpp LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_BUILD_TYPE Release)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 include_directories(include include/common)
 
@@ -12,7 +13,7 @@ add_library(common STATIC
     src/common/rk4.cpp
 )
 
-target_compile_options(common PRIVATE -Wall -Wextra -Wpedantic)
+target_compile_options(common PRIVATE -Wall -Wextra -Wpedantic -Wconversion -Wshadow)
 
 add_executable(oop_foundations src/oop_foundations/main_oop.cpp)
 target_link_libraries(oop_foundations PRIVATE common)
